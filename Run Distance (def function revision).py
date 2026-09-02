@@ -1,3 +1,16 @@
+"""
+Exercise: Running Tracker Analysis
+Mistakes Made:
+- Forgot the colon at the end of the `def` statement.
+- Placed the guard clause outside the function body instead of at the top.
+- Accidentally called the function inside itself (recursion) instead of checking `len(distance)`.
+
+Key Learnings:
+- Guard clauses must be at the very top of the function to catch empty lists before math is attempted.
+- Checking `len(distance) == 0` prevents a ZeroDivisionError.
+"""
+
+
 def analyze_run(distance):
     if len(distance) == 0:
             return 0, 0, 0
